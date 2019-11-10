@@ -1,0 +1,557 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+/*  background-color: #b2c4d0;
+*/  
+ 
+  font-family: 'Roboto',arial,sans-serif;
+  
+  background-color: #485d699c;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 2.5em;
+  line-height: 1;
+  padding: 30px 0 15px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 10px 0;
+}
+
+h3{
+  font-size: 1.4em;
+  text-align:center;
+}
+
+
+p{
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+strong{
+  color: #fff8ca;
+
+/*  color: #08f534d1;*/
+
+}
+nav ul{
+  list-style-type: none;
+}
+
+
+nav a{
+  display: block;
+  color: white;
+  font-size: 1.4em;
+  padding: 1vh;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+nav a:hover{
+/*  background-color: #ddd;
+*/
+  background-color: #e5eaf0; 
+  color: black;
+  outline: none;
+
+}
+nav a:focus{
+/*  background-color: #ddd;
+*/
+background-color: #e5eaf0; 
+  color: black;
+  outline: none;
+
+}
+
+.current {
+/*  text-transform: uppercase;
+*/  color: black;
+  background-color: #fff8ca;
+}
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top: 0;
+}
+
+:focus{
+/*Add the selector and code to put a 2px black border around all elements in focus.*/
+  border: 2px solid black;
+  outline: none;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 10%;
+  position: sticky;
+}
+
+footer p{
+  margin:auto;
+  color: white;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+
+}
+
+
+.nav{
+/*  display: flex;
+  flex-direction: column;
+  display:block;*/
+  align-self: center;
+  background-color: #485d699c;
+  text-align: center; 
+  padding: 10px 0;
+}
+
+
+
+.web-intro{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  color: black;
+/*  background-color: #485d699c;
+*/  
+  grid-gap: 2%;
+  margin: 5% 0;
+  text-align: 10%; 
+}
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/h1n1.jpg");     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  min-height: 450px;                /* Parallax effect */
+}
+
+header p{
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-align: center;
+
+}
+
+
+
+.web-intro img{
+  min-width: 100%;
+
+}
+
+.web-intro a{
+  color:black;
+
+}
+
+.intro-image{
+  display: block;
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.intro{
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+
+}
+
+.measures-image{
+  grid-column: 1/-1;
+  grid-row: 2/span 1;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.measures{
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+
+.newdiseases-image{
+  /*Your code here */
+  grid-column: 1/-1;
+  grid-row: 3/span 1;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.newdiseases{
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
+}
+
+
+.text-block{
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  font-size:1.5em;
+  padding:10px 10px;
+}
+
+
+/*gallery*/
+.gallery{
+
+  margin:0 0;
+  background-color: rgba(229, 234, 240, .5);
+}
+.gallery h2{
+  text-align: center;
+  padding:1.5% 0;
+  margin-bottom: 1.5%;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  filter: drop-shadow(4px 4px 2px black);
+
+}
+/* Position the image container (needed to position the left and right arrows) */
+.gcontainer {
+  position: relative;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  width: 60px;  
+  margin:5px auto;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(2px 2px 2px white);
+
+  font-size: 1em;
+  font-weight:bold;
+
+  padding: 8px 12px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align:center;
+}
+.mySlides img{
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+  padding: 5px 10px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(2px 2px 2px white);
+
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+#caption{
+  margin: 0;
+  text-align: center;
+  background-color: #222;
+  padding: 1.5% 16px;
+  color: white;
+  font-size: 1.2em;
+
+}
+.row{
+  display: none;
+}
+
+
+
+.introduce {
+  margin: 9px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+
+}
+
+.introduce .card{   
+  background-color: rgba(229, 234, 240, .7);
+  margin:2%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.introduce h3{ 
+  color: white;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, .5);
+  filter: drop-shadow(4px 4px 2px black);
+
+  font-weight: bold;
+
+  text-align: center;
+}
+.introduce p{
+  color: black;
+  margin: 5px;
+  background-color:  rgba(229, 234, 240, .7);
+  filter: drop-shadow(4px 4px 2px #e5eaf0);
+}
+.introduce .catagory{
+  width: 160px;
+  color: black;
+  font-weight:bold;
+
+  padding: 5px;
+  background-color: rgba(255, 255, 255, .8);
+  filter: drop-shadow(4px 4px 2px grey);
+}
+.introduce .detail{
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  background-color:  rgba(229, 234, 240, .7);
+  filter: drop-shadow(4px 4px 2px #e5eaf0);
+}
+
+.introduce ul{
+  padding: 5px;
+  margin-left: 15px;
+  list-style-type: square;
+  text-align: justify;
+}
+
+
+
+@media screen and (min-width: 800px){
+  h1{
+  font-size: 3em;
+  }
+
+  nav ul{
+  display: flex;
+  justify-content: space-around;
+  } 
+
+  header{
+    min-height: 550px;
+  }
+
+  header p{
+
+    margin:0 5%;
+    font-size: 1.5em;
+
+  }
+  .web-intro{
+    margin:2% 5%;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr; 
+  }
+
+  .intro-image{
+    max-height: 450px;
+    grid-column: 1/span 3;
+
+  }
+  .intro{
+    grid-column: 4/span 2;
+
+  }
+
+  .measures-image{
+    max-height: 450px;
+    grid-column: 3/span 3;
+  }
+
+  .measures{
+    grid-column: 1/span 2;
+  }
+
+  .newdiseases-image{
+    max-height: 450px;
+    grid-column: 1/span 3;
+  }
+
+  .newdiseases{
+    grid-column: 4/span 2;
+  }
+
+
+  .text-block{
+    padding:50px 10px;
+  }
+
+
+  .gallery{
+  margin:2% 2%;
+  }
+
+  .numbertext {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1em;
+  filter: drop-shadow(2px 2px 2px black);
+  position: absolute;
+  }
+
+  .mySlides img{
+    height: 400px;
+    margin-bottom: 15px;
+  }
+
+  .prev,
+  .next {
+  top: 25%;
+  padding: 16px;
+}
+
+  .row{
+  display: flex;
+  overflow: scroll;
+  overflow-y: auto;
+
+  }
+
+  .column img{
+    height: 150px;
+    min-width: 20%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.5;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .numbertext {
+  position: absolute;
+  }
+
+  .introduce{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+  }
+
+
+  footer{
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 6%;
+  }
+} 
+
+
+@media screen and (min-width: 1200px){
+
+  .introduce{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .introduce .content{
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+/*  .introduce .card:focus{
+  }*/
+}
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; 
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: initial;
+    transition: initial;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
+
+
