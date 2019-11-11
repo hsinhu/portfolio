@@ -88,7 +88,7 @@ background-color: #e5eaf0;
   top: -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .skip a:focus{
@@ -125,9 +125,13 @@ footer p{
   flex-direction: column;
   display:block;*/
   align-self: center;
-  background-color: #485d699c;
+  background-color: #7d93a0;
   text-align: center; 
   padding: 10px 0;
+  position: sticky;
+  z-index: 999;
+  top:0;
+  width:100%;
 }
 
 
@@ -212,7 +216,6 @@ header p{
 }
 
 .newdiseases-image{
-  /*Your code here */
   grid-column: 1/-1;
   grid-row: 3/span 1;
   max-height: 350px;
@@ -274,7 +277,7 @@ header p{
   display: none;
   text-align:center;
 }
-.mySlides img :hover{
+.mySlides img {
   height: 300px;
   max-width: 100%;
   overflow: hidden;
@@ -524,7 +527,6 @@ input[type=submit]:focus{
   .numbertext {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
-  font-size: 1em;
   filter: drop-shadow(2px 2px 2px black);
   position: absolute;
   }
@@ -557,14 +559,12 @@ input[type=submit]:focus{
     opacity: 0.5;
   }
 
-  .demo:hover {
+  .active, .demo:hover {
     opacity: 1;
     filter: drop-shadow(15px 15px 15px black);
 
   }
-  .numbertext {
-  position: absolute;
-  }
+
 
   .introduce{
     grid-template-columns: 1fr 1fr;
@@ -574,14 +574,6 @@ input[type=submit]:focus{
 
   #contactme{
   grid-template-columns: 1fr 1fr;
-  }
-
-  footer{
-    position: static;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 6%;
   }
 } 
 
