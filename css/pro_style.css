@@ -99,10 +99,10 @@ background-color: #e5eaf0;
 }
 
 :focus{
-/*Add the selector and code to put a 2px black border around all elements in focus.*/
   border: 2px solid black;
   outline: none;
 }
+
 
 footer{
   background-color: black;
@@ -181,6 +181,10 @@ header p{
 
 .web-intro a{
   color:black;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 10px 0;
 
 }
 
@@ -273,7 +277,7 @@ header p{
   display: none;
   text-align:center;
 }
-.mySlides img{
+.mySlides img :hover{
   height: 300px;
   max-width: 100%;
   overflow: hidden;
@@ -318,7 +322,6 @@ header p{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /* Container for image text */
 #caption{
   margin: 0;
@@ -342,6 +345,7 @@ header p{
   grid-gap: 10px;
 
 }
+
 
 .introduce .card{   
   background-color: rgba(229, 234, 240, .7);
@@ -390,6 +394,49 @@ header p{
   text-align: justify;
 }
 
+.detail img{
+  max-width: 100%;
+}
+
+#contactme p{
+  margin: 15px;
+}
+#contactme{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+form{
+  margin: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #fff8ca;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:1em;
+  width: 30%;
+}
+input[type=submit]:hover{
+  filter: drop-shadow(4px 4px 4px black);
+}
+input[type=submit]:focus{
+  filter: drop-shadow(4px 4px 4px black);
+}
 
 
 @media screen and (min-width: 800px){
@@ -491,9 +538,10 @@ header p{
     opacity: 0.5;
   }
 
-  .active,
   .demo:hover {
     opacity: 1;
+    filter: drop-shadow(15px 15px 15px black);
+
   }
   .numbertext {
   position: absolute;
@@ -505,7 +553,10 @@ header p{
 
   }
 
-
+  #contactme{
+  grid-template-columns: 1fr 1fr;
+  }
+  
   footer{
     position: static;
     left: 0;

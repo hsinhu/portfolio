@@ -10,6 +10,20 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+// function currentSlidekey(n){
+
+//   showSlides(slideIndex = n);
+
+// }
+
+// function plusbykey(n){
+//   if( code == 39 ) {
+//     showSlides(slideIndex += n);
+//   }
+//   if( code == 37 ) {
+//     showSlides(slideIndex += n);
+//   }
+// }
 
 function showSlides(n) {
   var i;
